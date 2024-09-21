@@ -1,3 +1,6 @@
-import Stopwatch from './StopwatchWithResults.js'
+const cups = document.querySelectorAll('.cup-small') as NodeListOf<HTMLDivElement>; 
 
-new Stopwatch(document.querySelector('.stopwatch'))
+
+Array.from(cups).forEach((smallCup, index) => {
+    console.log(index + 1)
+})
